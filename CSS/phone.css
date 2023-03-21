@@ -1,0 +1,58 @@
+@media screen and (max-width: 1124px) {
+    /* navigation */
+    /* #navbar{
+    flex-direction: column;
+} */
+    /* #navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 10px;
+} */
+
+    /* Home */
+    #home {
+        padding: 3px 0px;
+        height: 336px;
+    }
+
+    #home::before {
+        height: 490px;
+
+    }
+
+    #home p {
+        font-size: 10px;
+    }
+
+
+    /* Services */
+    /* #services{
+    flex-direction: column;
+} */
+    #services .box {
+        padding: 14px;
+        margin: 2px 2px;
+        margin-bottom: 20px;
+    }
+
+    /* client section  */
+    #clients {
+        flex-wrap: wrap;
+        padding: 2px;
+        font-size: 17px;
+    }
+
+
+    /* Footer */
+
+
+    /* utility classes */
+    .h-primary {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+}

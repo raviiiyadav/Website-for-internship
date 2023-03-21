@@ -1,0 +1,375 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* navigation bar  */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* top: 0px; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 14%;
+    width: fit-content;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+/* navigation bar: logo and image */
+#logo {
+    margin: 0px 0px;
+}
+
+#logo img {
+    margin: 0px 0px;
+    border-radius: 10%;
+    padding: 10px 10px;
+}
+
+/* navigation bar: list styling */
+#navbar ul {
+    display: flex;
+    float: right;
+    width: 100vw;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: black;
+    display: block;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(243, 40, 206);
+}
+
+#navbar ul li button {
+    background-color: white;
+    color: black;
+    padding: 2px 20px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+#navbar ul li button:hover {
+    background-color: white;
+    color: rgb(243, 40, 206);
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 229px;
+    height: 375px;
+    align-items: normal;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    background: url('/IMG/bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 88px;
+    left: 0px;
+    height: 537px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h2 {
+    color: white;
+    text-align: justify;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: justify;
+    font-size: 1.0rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* services section */
+
+#services-container h1 {
+    color: black;
+    text-align: justify;
+    font-family: 'Bree Serif', serif;
+    margin: 123px 222px;
+}
+
+#services-container-para {
+    color: black;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: -140px 235px;
+    font-family: 'Bree Serif', serif;
+}
+#services-container-paras {
+    margin: 191px 240px;
+}
+/* 244 */
+#services {
+    margin: 175px 140px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+#services .box {
+    padding: 20px;
+    margin: -166px 6px;
+}
+
+#services .box img {
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* clients section  */
+#client-section {
+    height: 550px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    background: url(/IMG/bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 454px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    margin: -175px 206px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    font-size: 23px;
+}
+
+#client-section h1 {
+    color: black;
+    text-align: justify;
+    font-family: 'Bree Serif', serif;
+    margin: 123px 222px;
+    padding: 48px 0px;
+}
+
+#client-section-para {
+    color: black;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: -171px 235px;
+    font-family: 'Bree Serif', serif;
+}
+#client-section-paras {
+    margin: 225px 240px;
+}
+.client-item {
+    padding: 0px;
+}
+.client-item-font1 {
+    font-family: 'Bree Serif', serif;
+    padding: 0px;
+}
+.client-item-font2 {
+    font-family: 'Bree Serif', serif;
+    padding: 0px;
+}
+.client-item-font3 {
+    font-family: 'Bree Serif', serif;
+    padding: 0px;
+}
+.client-item-font4 {
+    font-family: 'Bree Serif', serif;
+    padding: 0px;
+}
+.client-item-font5 {
+    font-family: 'Bree Serif', serif;
+    padding: 0px;
+}
+.client-item-font6 {
+    font-family: 'Bree Serif', serif;
+    padding: 0px;
+}
+
+#clients img {
+    height: 120px;
+}
+
+/* contact section  */
+#stories {
+    height: 1135px;
+    position: relative;
+}
+
+#stories::before {
+    content: "";
+    position: absolute;
+    /* background: url(../bg4.jpg); */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#stories h1 {
+    color: black;
+    text-align: justify;
+    font-family: 'Bree Serif', serif;
+    margin: 18px 222px;
+}
+
+#stories-para {
+    color: black;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: -37px 235px;
+    font-family: 'Bree Serif', serif;
+}
+#stories-paras {
+    margin: 86px 240px;
+}
+
+#stories-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin: 200px;
+}
+#stories-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin: 376px;
+}
+
+#stories .box {
+    padding: 20px 117px;
+    margin: -166px 6px;
+}
+
+#stories .box img {
+    height: 245px;
+    width: 320px;
+    display: block;
+    margin: auto;
+}
+#stories .box h5 {
+    font-size: 19px;
+    font-family: 'Bree Serif', serif;
+}
+
+#stories .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* footer section  */
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 3.5rem;
+    font-family: 'Bree Serif', serif;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    padding: 10px 0;
+}
+
+.btn {
+    padding: 15px 20px;
+    margin: 25px -3px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: start;
+}
+
+.center1 {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(93, 93, 180);
+    font-family: 'Bree Serif', serif;
+}
+.btn1 {
+    padding: 15px 20px;
+    margin: 25px -3px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+.center2{
+align-items: center;
+text-align: center;
+justify-content: center;
+line-height: 2.0;
+}
+.fonsize{
+    font-size: 1.0rem;
+    font-family: 'Bree Serif', serif;
+}
+.atag{
+    color: white;
+    text-decoration: none;
+}
+.atag:hover {
+    color: rgb(243, 40, 206);
+}
